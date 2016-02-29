@@ -1,0 +1,3 @@
+__author__ = 'jtakwani'
+for i in range(1,input()):
+    print i * 10**i / 9
