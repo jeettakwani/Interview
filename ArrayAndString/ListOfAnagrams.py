@@ -14,11 +14,7 @@ def listOfAnagrams():
 
     for i in range(len(words)):
         word = ''.join(sorted(words[i]))
-        if word not in dictionaryOfAnagrams:
-            print word
-            dictionaryOfAnagrams[word].append(words[i])
-        else:
-            dictionaryOfAnagrams[word].append(words[i])
+        dictionaryOfAnagrams[word].append(words[i])
 
     for i,j in dictionaryOfAnagrams.iteritems():
         print dictionaryOfAnagrams[i],

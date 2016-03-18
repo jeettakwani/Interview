@@ -3,9 +3,9 @@ __author__ = 'jtakwani'
 # @param A : string
 # @param B : integer
 # @return a strings
-def convert(self, A, B):
+def convert(A, B):
     if len(A) <= 1 or B == 1:
-        return A
+        print A
     matrix = [[0 for x in range(len(A))] for x in range(B)]
     column = 0
     row = 0
@@ -29,4 +29,7 @@ def convert(self, A, B):
             else:
                 str = str + matrix[i][j]
 
-    return str
+    print str
+    print matrix
+
+convert("YelpIsHiring",3)
